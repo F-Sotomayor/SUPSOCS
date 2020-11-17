@@ -26,7 +26,11 @@ const Team = () => (
       justifyContent="center"
       padding={8}
     >
-      <SimpleGrid columns={4} width="100%" spacing={10}>
+      <SimpleGrid
+        columns={{ base: 1, lg: 3 }}
+        width="100%"
+        spacing={{ base: 16, lg: 10 }}
+      >
         <TeamCard teamimage="julia.jpg" name="Julia Gomez" />
         <TeamCard teamimage="emma.jpg" name="Emma Zambaldi" />
         <TeamCard teamimage="viviana.jpg" name="Viviana Patrone" />

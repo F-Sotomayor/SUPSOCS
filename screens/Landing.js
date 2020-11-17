@@ -15,7 +15,7 @@ const Landing = () => (
       width="100%"
       height={["45vh", "45vh", "25vh", "15vh"]}
       padding={[1, 2, 4, 6]}
-      position="fixed"
+      position={{ base: "relative", lg: "sticky" }}
       backgroundColor="white"
       zIndex={2}
     >
@@ -69,17 +69,16 @@ const Landing = () => (
       </Flex>
     </Heading>
     <Container
-      padding={6}
+      padding={{ base: 2, lg: 6 }}
       height="100%"
       width="100%"
       backgroundColor="primary.600"
-      maxWidth="100"
+      maxWidth="100%"
       backgroundImage="url(bg3.jpg)"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
     >
-      <Flex flex={1} height="100%" padding={6} marginTop={16}>
-        <Box display="flex" flex={1}></Box>
+      <Flex flex={1} height="100%" padding={6} marginTop={{ base: 4, lg: 16 }}>
         <Box
           display="flex"
           flex={1}
@@ -87,8 +86,8 @@ const Landing = () => (
           alignItems="center"
         >
           <Box
-            marginTop={-60}
-            height="60%"
+            marginTop={{ base: 0, lg: -60 }}
+            height={{ base: "100%", lg: "60%" }}
             display="flex"
             flexDirection="column"
             justifyContent="space-between"

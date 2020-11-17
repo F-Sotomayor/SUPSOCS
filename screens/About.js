@@ -2,12 +2,17 @@ import React from "react";
 import { Text, Flex, Box, SimpleGrid, Image } from "@chakra-ui/core";
 
 const About = () => (
-  <Flex width="100%" height="100%" padding={12}>
-    <Box flex={1} justifyItems="center">
+  <Flex
+    width="100%"
+    height="100%"
+    padding={{ base: 2, lg: 12 }}
+    direction={{ base: "column", lg: "row" }}
+  >
+    <Box flex={1} justifyItems="center" display={{ base: "none", lg: "flex" }}>
       <Image src="about.jpg" height="90%" />
     </Box>
     <Box flex={1} display="flex" flexDirection="column">
-      <Box width={220}>
+      <Box width={{ base: "100%", lg: 220 }} textAlign="center">
         <Text
           fontSize={24}
           fontWeight={700}
@@ -18,7 +23,10 @@ const About = () => (
           SOBRE NOSOTROS
         </Text>
       </Box>
-      <Box>
+      <Box
+        padding={{ base: 2, lg: 0 }}
+        textAlign={{ base: "center", lg: "left" }}
+      >
         <Text>
           Somos un grupo de trabajadores de la psicologia social y otros ambitos
           relacionados con la salud mental (Operadores Socio Terapeuticos,
@@ -32,10 +40,19 @@ const About = () => (
         </Text>
       </Box>
       <Box marginTop={12}>
-        <Text fontSize={24} fontWeight={600}>
+        <Text
+          fontSize={24}
+          fontWeight={600}
+          textAlign={{ base: "center", lg: "left" }}
+        >
           Porque elegirnos a nosotros?
         </Text>
-        <SimpleGrid columns={2} marginTop={6} spacing={2}>
+        <SimpleGrid
+          columns={2}
+          marginTop={6}
+          spacing={2}
+          textAlign={{ base: "center", lg: "left" }}
+        >
           <Box>
             <Text>Razon Numero 1</Text>
           </Box>
