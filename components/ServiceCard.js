@@ -10,7 +10,7 @@ const ServiceCard = ({ serviceName, serviceDescription, imageSrc }) => (
     padding={4}
   >
     <Box justifyContent="center" display="flex">
-      <Image width="50%" height="100%" src={imageSrc} />
+      <Image width={225} height={128} src={imageSrc} borderRadius={50} />
     </Box>
     <Box justifyContent="center" display="flex">
       <Text fontWeight={600} color="white" fontSize={24}>

@@ -8,8 +8,13 @@ const About = () => (
     padding={{ base: 2, lg: 12 }}
     direction={{ base: "column", lg: "row" }}
   >
-    <Box flex={1} justifyItems="center" display={{ base: "none", lg: "flex" }}>
-      <Image src="about.jpg" height="90%" />
+    <Box
+      flex={1}
+      justifyItems="center"
+      display={{ base: "none", lg: "flex" }}
+      marginRight={6}
+    >
+      <Image src="about.jpg" height="100%" />
     </Box>
     <Box flex={1} display="flex" flexDirection="column">
       <Box width={{ base: "100%", lg: 220 }} textAlign="center">
@@ -50,26 +55,34 @@ const About = () => (
         <SimpleGrid
           columns={2}
           marginTop={6}
-          spacing={2}
+          spacing={10}
           textAlign={{ base: "center", lg: "left" }}
         >
-          <Box>
-            <Text>Razon Numero 1</Text>
+          <Box backgroundColor="primary.100" padding={2}>
+            <Text>
+              Por nuestro compromiso para la jerarquizacion de nuestra profesión
+            </Text>
           </Box>
-          <Box>
-            <Text>Razon Numero 1</Text>
+          <Box backgroundColor="primary.100" padding={2}>
+            <Text>
+              Porque nuestro interés es fomentar la unión, armonía solidaridad y
+              la participación activa de los trabajadores de la Psicología
+              Social y carreras afines en el campo de salud mental.
+            </Text>
           </Box>
-          <Box>
-            <Text>Razon Numero 1</Text>
+          <Box backgroundColor="primary.100" padding={2}>
+            <Text>
+              Porque nuestra lucha esta orientada a beneficiar a nuestros
+              afiliados, realizando propuestas que resulten enriquecedoras tanto
+              laboral como profesionalmente.
+            </Text>
           </Box>
-          <Box>
-            <Text>Razon Numero 1</Text>
-          </Box>
-          <Box>
-            <Text>Razon Numero 1</Text>
-          </Box>
-          <Box>
-            <Text>Razon Numero 1</Text>
+          <Box backgroundColor="primary.100" padding={2}>
+            <Text>
+              Porque nuestro objetivo es promover acciones tendientes a ofrecer
+              servicios de calidad, trabajando colectivamente para la digna
+              representación de nuestros afiliados
+            </Text>
           </Box>
         </SimpleGrid>
       </Box>

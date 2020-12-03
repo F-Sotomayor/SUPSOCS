@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/core";
 
 import About from "../screens/About";
+import Footer from "../components/Footer/Footer";
 
 import Landing from "../screens/Landing";
 import ServiceCard from "../components/ServiceCard";
@@ -24,7 +25,7 @@ const Index = () => (
     <Stack width="100%" height="auto">
       <About />
     </Stack>
-    <Stack width="100%" height="100vh">
+    <Stack width="100%" height="auto">
       <Estatuo />
     </Stack>
     <Stack
@@ -52,36 +53,36 @@ const Index = () => (
         <SimpleGrid
           width="100%"
           columns={{ base: 1, lg: 3 }}
-          spacing={{ base: 16, lg: 0 }}
+          spacing={{ base: 16, lg: 4 }}
         >
           <ServiceCard
-            imageSrc="bg.jpg"
-            serviceName="Lorem ipsum dolor"
+            imageSrc="obrasocial.jpg"
+            serviceName="Obra Social"
             serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
           />
           <ServiceCard
-            imageSrc="bg.jpg"
-            serviceName="Lorem ipsum dolor"
+            imageSrc="turismo.png"
+            serviceName="Turismo"
             serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
           />
           <ServiceCard
-            imageSrc="bg.jpg"
-            serviceName="Lorem ipsum dolor"
+            imageSrc="capacitaciones.jpg"
+            serviceName="Capacitaciones y Cursos"
             serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
           />
           <ServiceCard
-            imageSrc="bg.jpg"
-            serviceName="Lorem ipsum dolor"
+            imageSrc="asesoramiento.jpg"
+            serviceName="Asesoramiento Juridico"
             serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
           />
           <ServiceCard
-            imageSrc="bg.jpg"
-            serviceName="Lorem ipsum dolor"
+            imageSrc="empleo.png"
+            serviceName="Bolsa de Empleo"
             serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
           />
           <ServiceCard
-            imageSrc="bg.jpg"
-            serviceName="Lorem ipsum dolor"
+            imageSrc="actividades.jpg"
+            serviceName="Actividades culturales y recreativas"
             serviceDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
           />
         </SimpleGrid>
@@ -90,6 +91,7 @@ const Index = () => (
     <Stack width="100%" height="auto">
       <Team />
     </Stack>
+    <Footer />
   </Stack>
 );
 export default Index;
