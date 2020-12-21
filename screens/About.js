@@ -14,7 +14,7 @@ const About = () => (
       display={{ base: "none", lg: "flex" }}
       marginRight={6}
     >
-      <Image src="about.jpg" height="100%" />
+      <Image src="about.jpg" height="90%" w="90%" />
     </Box>
     <Box flex={1} display="flex" flexDirection="column">
       <Box width={{ base: "100%", lg: 220 }} textAlign="center">
@@ -43,48 +43,6 @@ const About = () => (
           brindando a nuestros afiliados todo tipo de beneficios que sirvan para
           dignificarlos.
         </Text>
-      </Box>
-      <Box marginTop={12}>
-        <Text
-          fontSize={24}
-          fontWeight={600}
-          textAlign={{ base: "center", lg: "left" }}
-        >
-          Porque elegirnos a nosotros?
-        </Text>
-        <SimpleGrid
-          columns={2}
-          marginTop={6}
-          spacing={10}
-          textAlign={{ base: "center", lg: "left" }}
-        >
-          <Box backgroundColor="primary.100" padding={2}>
-            <Text>
-              Por nuestro compromiso para la jerarquizacion de nuestra profesión
-            </Text>
-          </Box>
-          <Box backgroundColor="primary.100" padding={2}>
-            <Text>
-              Porque nuestro interés es fomentar la unión, armonía solidaridad y
-              la participación activa de los trabajadores de la Psicología
-              Social y carreras afines en el campo de salud mental.
-            </Text>
-          </Box>
-          <Box backgroundColor="primary.100" padding={2}>
-            <Text>
-              Porque nuestra lucha esta orientada a beneficiar a nuestros
-              afiliados, realizando propuestas que resulten enriquecedoras tanto
-              laboral como profesionalmente.
-            </Text>
-          </Box>
-          <Box backgroundColor="primary.100" padding={2}>
-            <Text>
-              Porque nuestro objetivo es promover acciones tendientes a ofrecer
-              servicios de calidad, trabajando colectivamente para la digna
-              representación de nuestros afiliados
-            </Text>
-          </Box>
-        </SimpleGrid>
       </Box>
     </Box>
   </Flex>

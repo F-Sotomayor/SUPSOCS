@@ -13,15 +13,11 @@ const ServiceCard = ({ serviceName, serviceDescription, imageSrc }) => (
       <Image width={225} height={128} src={imageSrc} borderRadius={50} />
     </Box>
     <Box justifyContent="center" display="flex">
-      <Text fontWeight={600} color="white" fontSize={24}>
+      <Text fontWeight={600} color="white" fontSize={24} marginTop={2}>
         {serviceName}
       </Text>
     </Box>
-    <Box justifyContent="center" display="flex">
-      <Text fontSize={16} color="white" textAlign="center">
-        {serviceDescription}
-      </Text>
-    </Box>
+    <Box justifyContent="center" display="flex"></Box>
   </Flex>
 );
 export default ServiceCard;

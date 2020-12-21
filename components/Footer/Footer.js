@@ -22,10 +22,19 @@ function Footer() {
         </Text>
         <Box display="flex" marginTop={4}>
           <a href="tel:123-456">
-            <Image src="phone.png" width={16} height={16} marginRight={8} />
+            <Image
+              src="https://icongr.am/material/phone.svg?size=128&color=ababab"
+              width={16}
+              height={16}
+              marginRight={8}
+            />
           </a>
           <a href="mailto:example@example.com?Subject=Contact%SUPSOCS">
-            <Image src="email.png" width={16} height={16} />
+            <Image
+              src="https://icongr.am/material/email-outline.svg?size=128&color=ababab"
+              width={16}
+              height={16}
+            />
           </a>
         </Box>
       </Flex>
@@ -41,13 +50,27 @@ function Footer() {
         </Text>
         <Box display="flex" marginTop={4}>
           <a href="instagram.com">
-            <Image src="instagram.png" width={16} height={16} marginRight={8} />
+            <Image
+              src="https://icongr.am/material/instagram.svg?size=128&color=ababab"
+              width={16}
+              height={16}
+              marginRight={8}
+            />
           </a>
           <a href="facebook.com">
-            <Image src="facebook.png" width={16} height={16} marginRight={8} />
+            <Image
+              src="https://icongr.am/material/facebook.svg?size=128&color=ababab"
+              width={16}
+              height={16}
+              marginRight={8}
+            />
           </a>
           <a href="twitter.com">
-            <Image src="twitter.png" width={16} height={16} />
+            <Image
+              src="https://icongr.am/material/twitter.svg?size=128&color=ababab"
+              width={16}
+              height={16}
+            />
           </a>
         </Box>
       </Flex>

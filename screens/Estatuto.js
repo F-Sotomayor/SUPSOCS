@@ -37,7 +37,7 @@ const Estatuto = () => (
       </Box>
       <Box fontSize={18}>
         Propiciar y concretar Convenios Colectivos, proponer proyectos de
-        legislacionque determinan la mejora del sector tanto en las condiciones
+        legislacion que determinan la mejora del sector tanto en las condiciones
         de trabajo, como en las relaciones laborales en general.
       </Box>
       <Box fontSize={18}>

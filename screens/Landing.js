@@ -54,16 +54,16 @@ const Landing = () => (
           fontWeight={300}
         >
           <Box>
-            <a href="#">SOBRE NOSOTROS</a>
+            <a style={{ cursor: "pointer" }}>SOBRE NOSOTROS</a>
           </Box>
           <Box>
-            <a href="#">ESTATUTO</a>
+            <a style={{ cursor: "pointer" }}>ESTATUTO</a>
           </Box>
           <Box>
-            <a href="#">SERVICIOS AFILIADOS</a>
+            <a style={{ cursor: "pointer" }}>SERVICIOS AFILIADOS</a>
           </Box>
           <Box>
-            <a href="#">COMISION DIRECTIVA</a>
+            <a style={{ cursor: "pointer" }}>COMISION DIRECTIVA</a>
           </Box>
         </Box>
       </Flex>
