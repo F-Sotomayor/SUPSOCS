@@ -12,14 +12,25 @@ const Suscribe = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    database.collection("users").doc().set({
-      name: name,
-      lastName: lastName,
-      oficio: job,
-      dni: dni,
-      email: mail,
-    });
-    window.location = "http://mpago.la/17auKct";
+    if (
+      name.length > 4 &&
+      lastName.length > 4 &&
+      dni.length > 4 &&
+      job.length > 4 &&
+      mail.length > 4
+    ) {
+      database.collection("users").doc().set({
+        name: name,
+        lastName: lastName,
+        oficio: job,
+        dni: dni,
+        email: mail,
+      });
+    } else {
+      return;
+    }
+    window.location =
+      "https://www.mercadopago.com.ar/checkout/v1/payment/redirect/?preference-id=663843222-bfeb0828-9f4d-4410-9f4a-f377ff398a6b";
     setName("");
     setLastName("");
     setDni("");

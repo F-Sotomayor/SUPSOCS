@@ -43,6 +43,9 @@ const AdminPage = () => {
                 w="100%"
                 marginBottom={2}
                 textTransform="capitalize"
+                backgroundColor="primary.100"
+                h={12}
+                alignItems="center"
               >
                 <Box display="flex" flex={0.2}>
                   {user.name}

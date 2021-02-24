@@ -9,6 +9,7 @@ function Footer() {
       backgroundColor="blue.800"
       padding={4}
       flexDirection={{ base: "column", lg: "row" }}
+      marginTop={0}
     >
       <Flex
         width="100%"

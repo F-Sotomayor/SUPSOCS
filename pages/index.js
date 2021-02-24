@@ -154,6 +154,7 @@ const Index = () => {
       <div id="servicios"></div>
       <Stack
         padding={6}
+        marginBottom="-0.5rem"
         width="100%"
         height="auto"
         background="linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);"
@@ -211,10 +212,6 @@ const Index = () => {
             />
           </SimpleGrid>
         </Box>
-      </Stack>
-      <Stack width="100%" height="auto">
-        <div id="comision"></div>
-        <Team />
       </Stack>
       <Footer />
     </Stack>
